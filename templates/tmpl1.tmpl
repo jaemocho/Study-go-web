@@ -1,0 +1,16 @@
+Name: {{.Name}}
+Email: {{.Email}}
+{{if .IsOld -}}
+OldAge: {{.Age}}
+{{else -}}
+Age : {{.Age}}
+{{- end}}
+// - 는 공백을 날리는 기호 
+
+
+<a href="/user?email={{.Email}}">user</a>
+<script>
+var email={{.Email}}
+var name={{.Name}}
+var age={{.Age}}
+</script>

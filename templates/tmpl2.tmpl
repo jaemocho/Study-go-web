@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Template</title>
+</head>
+<body>
+// template 안에서 template
+// list로 줄 땐 range 사용 
+{{range .}}
+{{template "tmpl1.tmpl" .}}
+{{end}}
+</body>
+</html>
